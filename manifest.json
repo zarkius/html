@@ -3,7 +3,7 @@
   "short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
   "start_url": "/index.html",
   "display": "standalone",
-  "description": "A description for your application",
+  "description": "PWA de AprendeProgramar",
   "lang": "es",
   "dir": "auto",
   "theme_color": "#000000",
