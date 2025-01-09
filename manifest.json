@@ -1,7 +1,7 @@
 {
   "name": "AprendeProgramar",
   "short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
-  "start_url": "/index.html",
+  "start_url": "id = /index.html",
   "display": "standalone",
   "description": "PWA de AprendeProgramar",
   "lang": "es",
