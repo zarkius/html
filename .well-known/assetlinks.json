@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.aprendeprogramar2",
+    "sha256_cert_fingerprints":
+    ["6E:84:BF:A0:91:D6:1F:82:7B:F5:E4:64:3A:E0:29:F3:47:FA:34:7B:50:44:A8:A1:86:9F:54:2B:EE:74:E1:5E"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://yposteriormente.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.aprendeprogramar2",
+    "sha256_cert_fingerprints":
+    ["6E:84:BF:A0:91:D6:1F:82:7B:F5:E4:64:3A:E0:29:F3:47:FA:34:7B:50:44:A8:A1:86:9F:54:2B:EE:74:E1:5E"]
+  }
+}]
