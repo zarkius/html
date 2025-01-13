@@ -1,8 +1,22 @@
 {
-  "name": "AprendeProgramar",
-  "short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
-  "start_url": "id = /index.html",
-  "display": "standalone",
+"shortcuts": [
+  {
+    "name": "Start Live Session",
+    "short_name": "Start Live",
+    "description": "Jump direction into starting or joining a live session",
+    "url": "/?startLive",
+    "icons": [
+      {
+        "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+        "sizes": "192x192"
+      }
+    ]
+  }
+], 
+  "name": "yposteriormente.com",
+  "short_name": "AprendeProgramar",
+  "start_url": "index.html",
+  "display": "fullscreen",
   "description": "PWA de AprendeProgramar",
   "lang": "es",
   "dir": "auto",
