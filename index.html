@@ -8,10 +8,36 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="manifest" href="manifest.json">
-
+        <link rel="favicon" href="favicon.ico">
         <title>Login form responsive</title>  
     </head>
     <body>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBupp5b-hlsE6zViwk9mkwwk88wFdm0ICY",
+              authDomain: "yposteriormente.firebaseapp.com",
+              projectId: "yposteriormente",
+              storageBucket: "yposteriormente.firebasestorage.app",
+              messagingSenderId: "483619470669",
+              appId: "1:483619470669:web:7b82bc6b4d1dcd79a6cb04",
+              measurementId: "G-CTN6MWYE0V"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+
+
+
         <div class="l-form">
             <div class="shape1"></div>
             <div class="shape2"></div>
