@@ -18,8 +18,8 @@
   </head>
   <body>
     <h1>Hola Mundo</h1>
-    <button onclick="mostrarMensaje()">Haz clic aquí</button>
-    <script nonce="abc123">
+    <button onclick="generate-nonce.php">Haz clic aquí</button>
+    <script nonce="<?php$nonce?>">
       function mostrarMensaje() {
         alert("¡Hola, este es un mensaje desde JavaScript inline!");
       }
