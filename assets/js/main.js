@@ -1,3 +1,6 @@
+navigator.serviceWorker.register("service-worker.js");
+
+
 /*===== FOCUS =====*/
 const inputs = document.querySelectorAll(".form__input")
 
@@ -20,3 +23,6 @@ inputs.forEach(input=>{
     input.addEventListener("focus",addfocus)
     input.addEventListener("blur",remfocus)
 })
+
+navigator.serviceWorker.register("service-worker.js");
+// Import the functions you need from the SDKs you need
