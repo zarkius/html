@@ -1,6 +1,3 @@
-navigator.serviceWorker.register("service-worker.js");
-
-
 /*===== FOCUS =====*/
 const inputs = document.querySelectorAll(".form__input")
 
@@ -26,3 +23,4 @@ inputs.forEach(input=>{
 
 navigator.serviceWorker.register("service-worker.js");
 // Import the functions you need from the SDKs you need
+webSocket = new WebSocket("ws://destination.server.ext", "optionalProtocol");
