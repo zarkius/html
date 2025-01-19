@@ -1,4 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule .* - [E=RAND_NONCE:%{RAND_NONCE:generate-nonce}]
-</IfModule>
