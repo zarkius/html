@@ -1,37 +1,26 @@
-const https = require("https");
-const fs = require("fs");
-const express = require("express");
-const WebSocket = require("ws");
+const express = require('express');
+const http = require('http');
+const WebSocket = require('ws');
 
 const app = express();
-
-const server = https.createServer(
-  {
-    cert: fs.readFileSync(
-      "/etc/letsencrypt/live/chat.yposteriormente.com/fullchain.pem"
-    ),
-    key: fs.readFileSync(
-      "/etc/letsencrypt/live/chat.yposteriormente.com/privkey.pem"
-    ),
-  },
-  app
-);
-
+const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-wss.on("connection", function connection(ws) {
-  console.log("WebSocket conectado exitosamente!");
-
-  ws.on("message", function incoming(message) {
-    console.log("Recibido: %s", message);
-    ws.send(`Ecosistema: ${message}`);
+wss.on('connection', (ws) => {
+  ws.on('message', (message) => {
+    // Broadcast message to all clients
+    wss.clients.forEach(client => {
+      if (client.readyState === WebSocket.OPEN) {
+        client.send(message);
+      }
+    });
   });
+
+  ws.send('Welcome to the chat!');
 });
 
-app.get("/", (req, res) => {
-  res.send("Servidor WebSocket seguro en ejecución!");
-});
+app.use(express.static('public'));
 
-server.listen(3001, function listening() {
-  console.log("Servidor WebSocket seguro en marcha en https://localhost:3001");
+server.listen(8080, () => {
+  console.log('Server is listening on port 8080');
 });
