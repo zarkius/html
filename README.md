@@ -1,4 +1,4 @@
---h1-- Política de Privacidad y Exención de Responsabilidad
+# --h3-- Política de Privacidad y Exención de Responsabilidad
 
 1. Introducción
 
