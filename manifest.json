@@ -1,9 +1,10 @@
 {
   "name": "yposteriormente.com",
-  "short_name": "ypost",
-  "start_url": "/index.html",
+  "short_name": "encuentra trabajo posteriormente",
+  "id": "yposteriormente.com",
+  "start_url": "yposteriormente.com/index.html",
   "display": "fullscreen",
-  "description": "PWA de zarkius",
+  "description": "Aprende programacion y colocate posteriormente!",
   "lang": "es",
   "dir": "auto",
   "theme_color": "#000000",
@@ -17,11 +18,12 @@
       "purpose": "any"
     }
   ],
-  "images": [
-    {
-      "src": "/assets/img/yposteriormente.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+"screenshots": [
+  {
+    "src":"/assets/img/yposteriormente.com",
+    "sizes":"512x512",
+    "type":"image/png",
+    "description":"logo web"
+  }
+]
 }
