@@ -1,7 +1,7 @@
 {
   "name": "yposteriormente.com",
   "short_name": "encuentra trabajo posteriormente",
-  "id": "yposteriormente.com",
+  "id": "www.yposteriormente.com",
   "start_url": "yposteriormente.com/index.html",
   "display": "fullscreen",
   "description": "Aprende programacion y colocate posteriormente!",
@@ -12,18 +12,84 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/assets/img/icon192.png",
+      "src": "manifest-icon-192.maskable.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-"screenshots": [
-  {
-    "src":"/assets/img/yposteriormente.com",
-    "sizes":"512x512",
-    "type":"image/png",
-    "description":"logo web"
-  }
-]
+  "screenshots": [
+    {
+      "src": "/assets/img/yposteriormente.com",
+      "sizes": "512x512",
+      "type": "image/png",
+      "description": "logo web"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Aprende programacion",
+      "short_name": "Aprende programacion",
+      "description": "Aprende programacion y colocate posteriormente!",
+      "url": "yposteriormente.com/index.html",
+      "icons": [
+        {
+          "src": "manifest-icon-192.maskable.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "manifest-icon-512.maskable.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Encuentra trabajo",
+      "short_name": "Encuentra trabajo",
+      "description": "Encuentra trabajo en el area de programacion!",
+      "url": "yposteriormente.com/index.html",
+      "icons": [
+        {
+          "src": "manifest-icon-192.maskable.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "manifest-icon-512.maskable.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "scope": "/",
+  "categories": ["education", "productivity"],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.app",
+      "id": "com.example.app"
+    }
+  ],
+  "prefer_related_applications": false
 }
