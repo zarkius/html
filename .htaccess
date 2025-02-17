@@ -1,0 +1,2 @@
+# Establecer el valor de max_input_vars
+php_value max_input_vars 5000

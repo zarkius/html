@@ -1,63 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Login and Registration Form with HTML, CSS and JavaScript"
-    />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, Login and Registration Form"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="manifest" href="manifest.json" />
     <link rel="favicon" href="assets/img/yposteriormente.png" />
     <title>Login</title>
+=======
+    <title>Sidenav Flotante Abajo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+      }
+
+      .sidenav a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        text-align: center;
+      }
+
+      .sidenav a:hover {
+        background-color: #575757;
+      }
+
+      .main {
+        padding: 20px;
+        padding-bottom: 60px; /* Espacio para el sidenav flotante */
+      }
+    </style>
+>>>>>>> 1c22f5a (	deleted:    .github/dependabot.yml)
   </head>
   <body>
-    <div class="l-form">
-      <div class="shape1"></div>
-      <div class="shape2"></div>
-
-      <div class="form">
-        <img src="assets/img/authentication.svg" alt="" class="form__img" />
-
-        <form action="#" class="form__content">
-          <h1 class="form__title">Welcome</h1>
-
-          <div class="form__div form__div-one">
-            <div class="form__icon">
-              <i class="bx bx-user-circle"></i>
-            </div>
-
-            <div class="form__div-input">
-              <label for="form__input" class="form__label">Username</label>
-              <input type="text" class="form__input" />
-            </div>
-          </div>
-
-          <div class="form__div">
-            <div class="form__div-input">
-              <label for="" class="form__label">Password</label>
-              <input type="password" class="form__input" />
-            </div>
-          </div>
-          <a href="#" class="form__forgot">¿Contraseña olvidada?</a>
-
-          <input type="submit" class="form__button" value="Login" />
-
-          <div class="form__social">
-            <span class="form__social-text">Logueate rápido con: </span>
-
-            <img src="" alt="google" class="form__social-icon" />
-            <img src="" alt="Instagram" class="form__social-icon" />
-            <img src="" alt="Facebook" class="form__social-icon" />
-          </div>
-        </form>
-      </div>
+    <div class="sidenav">
+      <a href="#home">Inicio</a>
+      <a href="#about">Acerca de</a>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacto</a>
     </div>
-<script src="assets/js/main.js"></script>
+    <div class="main">
+      <h1>Hola</h1>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
