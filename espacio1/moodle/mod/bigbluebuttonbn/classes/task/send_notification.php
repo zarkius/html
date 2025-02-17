@@ -14,32 +14,32 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-declare(strict_types=1);
-
 namespace mod_bigbluebuttonbn\task;
-
 use core\task\adhoc_task;
-use core\message\message;
-use mod_bigbluebuttonbn\local\config;
 
 /**
- * Deprecated Ad-hoc task to send a notification related to the disabling of the BigBlueButton activity module.
- *
- * The ad-hoc tasks sends a notification to the administrator informing that the BigBlueButton activity module has
- * been disabled and they are required to confirm their acceptance of the data processing agreement prior to
- * re-enabling it.
+ * Class containing the deprecated class for send_notification event in BBB.
  *
  * @package   mod_bigbluebuttonbn
- * @copyright 2022 Mihail Geshoski <mihail@moodle.com>
+ * @copyright 2021 Andrew Lyons <andrew@nicols.co.uk>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class send_bigbluebutton_module_disabled_notification extends adhoc_task {
+class send_notification extends adhoc_task {
     /**
      * Execute the task.
      */
     public function execute() {
         // Log the debug message.
-        $message = "Attempted to run deprecated send_bigbluebutton_module_disabled_notification task.";
+        $message = $this->generate_message();
         debugging($message, DEBUG_DEVELOPER);
+    }
+
+    /**
+     * Output the debug log message.
+     *
+     * @return string The debug log message.
+     */
+    public function generate_message() {
+        return "Attempted to run deprecated implementation of send_notification task.";
     }
 }
