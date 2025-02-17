@@ -15,37 +15,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Navigation block caps.
+ * block_comments comment deleted event.
  *
- * @package    block_navigation
- * @copyright  Mark Nelson <markn@moodle.com>
+ * @package    block_comments
+ * @copyright  2013 Rajesh Taneja <rajesh@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace block_comments\event;
 defined('MOODLE_INTERNAL') || die();
 
-$capabilities = array(
-
-    'block/navigation:myaddinstance' => array(
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'user' => CAP_ALLOW
-        ),
-
-        'clonepermissionsfrom' => 'moodle/my:manageblocks'
-    ),
-
-    'block/navigation:addinstance' => array(
-        'riskbitmask' => RISK_SPAM | RISK_XSS,
-
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_BLOCK,
-        'archetypes' => array(
-            'editingteacher' => CAP_ALLOW,
-            'manager' => CAP_ALLOW
-        ),
-
-        'clonepermissionsfrom' => 'moodle/site:manageblocks'
-    ),
-);
+/**
+ * block_comments comment deleted event.
+ *
+ * @package    block_comments
+ * @since      Moodle 2.7
+ * @copyright  2013 Rajesh Taneja <rajesh@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class comment_deleted extends \core\event\comment_deleted {
+    // No need to override any method.
+}

@@ -15,37 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Navigation block caps.
+ * Course list block settings
  *
- * @package    block_navigation
- * @copyright  Mark Nelson <markn@moodle.com>
+ * @package    block_course_list
+ * @copyright  2007 Petr Skoda
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') || die;
 
-$capabilities = array(
+if ($ADMIN->fulltree) {
+    $options = array('all'=>get_string('allcourses', 'block_course_list'), 'own'=>get_string('owncourses', 'block_course_list'));
 
-    'block/navigation:myaddinstance' => array(
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'user' => CAP_ALLOW
-        ),
+    $settings->add(new admin_setting_configselect('block_course_list_adminview', get_string('adminview', 'block_course_list'),
+                       get_string('configadminview', 'block_course_list'), 'all', $options));
 
-        'clonepermissionsfrom' => 'moodle/my:manageblocks'
-    ),
+    $settings->add(new admin_setting_configcheckbox('block_course_list_hideallcourseslink', get_string('hideallcourseslink', 'block_course_list'),
+                       get_string('confighideallcourseslink', 'block_course_list'), 0));
+}
 
-    'block/navigation:addinstance' => array(
-        'riskbitmask' => RISK_SPAM | RISK_XSS,
 
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_BLOCK,
-        'archetypes' => array(
-            'editingteacher' => CAP_ALLOW,
-            'manager' => CAP_ALLOW
-        ),
-
-        'clonepermissionsfrom' => 'moodle/site:manageblocks'
-    ),
-);
