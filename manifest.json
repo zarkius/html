@@ -1,4 +1,5 @@
 {
+  "protocol_handlers": [{ "protocol": "mailto", "url": "/newEmail?to=%s" }],
   "name": "yposteriormente.com",
   "short_name": "encuentra trabajo posteriormente",
   "id": "www.yposteriormente.com",
@@ -46,13 +47,13 @@
   ],
   "shortcuts": [
     {
-      "name": "Aprende programacion",
+      "name": "AprendeProgramar",
       "short_name": "Aprende programacion",
       "description": "Aprende programacion y colocate posteriormente!",
       "url": "yposteriormente.com/index.html",
       "icons": [
         {
-          "src": "manifest-icon-192.maskable.png",
+          "src": "assets",
           "sizes": "192x192",
           "type": "image/png"
         },
